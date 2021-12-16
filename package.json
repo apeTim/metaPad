@@ -1,0 +1,17 @@
+{
+  "name": "metapad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "@walletconnect/web3-provider": "^1.7.0",
+    "express": "^4.17.1",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

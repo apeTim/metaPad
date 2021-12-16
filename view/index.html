@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="MetaPad - Metaverse ecosystem for growing new projects">
+    <meta name="description"
+        content="MetaPad, Launchpad, NFT, Metaverse, decentralized platfrom, binance, bsc, bsc launchpad, ido, ico, smart contract, dapp">
+    <link rel="stylesheet" href="../public/css/style.css" />
+
+    <link rel="icon" href="https://metaversepad.app/public/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <meta name="author" content="metaversepad.app" />
+    <meta property="og:title" content="MetaPad - Metaverse ecosystem for growing new projects" />
+    <meta property="og:image" content="https://metaversepad.app/public/app_metaicon.jpg" />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metaversepad.app" />
+    <meta property="og:site_name" content="metaversepad.app" />
+    <meta property="og:description" content="The MetaPad is a decentralized platform for fundraising and
+launch game projects on metaverse ecosystem. Launchpad, NFT Marketplace, Smart Contract Audit. " />
+
+    <title>MetaPad - Metaverse ecosystem</title>
+</head>
+
+<body>
+    <div id='switchNetwork' class="switchNetwork">
+        <div class="switchModal">
+            <h3>Please connect to appropriate BSC network</h3>
+            <button onclick="switchChain()" class="apply">Connect</button>
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div class="logotype"><a href="https://metaversepad.app/"><img src="../public/img/logo.png"
+                                class="img-fluid" /></a></div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <div class="toplinks">
+                                <a href="https://metaversepad.app/ido"><img src="../public/img/menu_icon1.png" />
+                                    Launchpad</a>
+                                <a href="#pools"><img src="../public/img/menu_icon2.png" /> View Pools</a>
+                                <a href="#"><img src="../public/img/menu_icon3.png" /> Projects</a>
+                            </div>
+                        </ul>
+                        <span class="navbar-text">
+                            <button type="button" class="connect_button" id="btn-connect">Wallet Connect</button>
+                            <button type="button" class="connect_button" id="btn-disconnect"
+                                style="display:none;">Disconnect</button>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+
+
+        <div class="block1_bg">
+            <div class="container">
+
+                <div class="intro">
+                    <div class="dott"></div>
+                    <h1>Metaverse</h1>
+                    <h3>ecosystem for growing new projects</h3>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScEiABfm44GgsRw11QmChdgG0aVwglKvBzTiTUwAEfYhCnvRg/viewform"
+                        target="_blank"><button type="button" class="apply"><img src="../public/img/plus_icon.png" />
+                            APPLY FOR IDO</button></a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div data-aos="zoom-in" data-aos-duration="700">
+                        <div class="apps">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-4">
+                                    <img src="../public/img/ido_icon.png" />
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-8" style="padding-top:20px;">
+                                    <h3>Launchpad</h3>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Fundrising and launching new metaverse
+                                        projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div data-aos="zoom-in" data-aos-duration="800">
+                        <div class="apps">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-4">
+                                    <img src="../public/img/nft_icon.png" />
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-8" style="padding-top:20px;">
+                                    <h3>
+                                        NFT
+                                        Produce
+                                    </h3>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Opportunity to produce and trade items
+                                        on the metaverse ecosystem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div data-aos="zoom-in" data-aos-duration="900">
+                        <div class="apps">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-lg-4">
+                                    <img src="../public/img/audit_icon.png" />
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-8">
+                                    <h3>
+                                        Contracts
+                                        audits
+                                    </h3>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Smart Contract audits and support
+                                        with development
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="about">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5">
+                    <img src="../public/img/about_img.png" class="img-fluid" />
+                </div>
+                <div class="col-12 col-sm-6 col-lg-7">
+                    <div class="title">
+                        <div class="title-line"></div>
+                        <h3>ABOUT US</h3>
+                    </div>
+                    <p>
+                        The MetaPad is a decentralized platform for fundrising and
+                        launching game projects on the metaverse ecosystem.
+                        <br /><br />
+                        MetaPad will help crypto game projects with token distribution, NFT and developing.
+                        <br /><br />
+                        We enable game projects move from old industries to the
+                        crypto metaverse ecosystem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tierbg">
+        <div class="container">
+            <div class="title">
+                <div class="title-line"></div>
+                <h3>TIER SYSTEM</h3>
+            </div>
+            <h4 class="tokenBalance">YOUR MPD TOKENS: <span id='balance'></span></h4>
+
+            <div id="tiers" class="row">
+                <h2 class="loadingMessage">Loading, please wait...</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section id="pools">
+        <div class="pools">
+            <div class="pools_bg">
+                <div class="container">
+                    <div class="pools_place">
+                        <div class="title">
+                            <div class="title-line"></div>
+                            <h3>POOLS</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6">
+                                <div data-aos="flip-up" data-aos-duration="900">
+                                    <div class="empty_pool">
+                                        <h3><img src="../public/img/time_icon.png" /> Coming Soon</h3>
+                                        <p>Reserve your place</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pools_place">
+                        <div class="title">
+                            <div class="title-line"></div>
+                            <h3>CLOSED POOLS</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-6">
+                                <div data-aos="flip-up" data-aos-duration="900">
+                                    <div class="mid_pool">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-5 col-lg-6">
+                                                <div class="poolava"><img
+                                                        src="../public/img/pools_img/metapad/metapad.png"
+                                                        class="img-fluid" /></div>
+                                            </div>
+                                            <div class="col-12 col-sm-7 col-lg-6">
+                                                <div class="pool_info">
+                                                    <h3>MetaPad</h3>
+                                                    <p>Decentralised launch platform</p>
+                                                    <div class="time_bg"><img src="../public/img/time_icon.png" /> <span
+                                                            id="timerString">Connect Wallet</span></div>
+
+                                                    <div class="row">
+                                                        <div class="pool_footer">
+                                                            <div class="col"><img
+                                                                    src="../public/img/pools_img/metapad/metaicon.png" />
+                                                                <h3>MPD</h3>
+                                                            </div>
+                                                            <div class="col"><a href="/ido"><button type="button"
+                                                                        class="pool_btn">Visit</button></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="clr" style="height:70px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clr" style="height:50px;"></div>
+
+
+    <div class="container">
+        <div class="roadmap">
+            <div class="title">
+                <div class="title-line"></div>
+                <h3>ROADMAP</h3>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div data-aos="fade-down" data-aos-duration="900">
+                        <div class="row">
+                            <div class="col">
+                                <div class="q">Q3</div>
+                            </div>
+                            <div class="col">
+                                <h2>2021</h2>
+                            </div>
+                        </div>
+
+                        <div class="map">
+                            <p><img src="../public/img/s.png" /> Start developing</p>
+                            <p><img src="../public/img/s.png" /> Beta test platform</p>
+                            <p><img src="../public/img/s.png" /> Community building</p>
+                        </div>
+                        <div class="road_line"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div class="dropp">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="q">Q4</div>
+                                </div>
+                                <div class="col">
+                                    <h2>2021</h2>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <p><img src="../public/img/s.png" /> Launch platform</p>
+                                <p><img src="../public/img/s.png" /> Start marketing company</p>
+                                <p><img src="../public/img/s.png" /> Public token sell</p>
+                                <p><img src="../public/img/s.png" /> Listing on DEX</p>
+                                <p><img src="../public/img/s.png" /> Launch staking</p>
+                                <p><img src="../public/img/s.png" /> First launch IDO</p>
+                                <p><img src="../public/img/s.png" /> Strategic partnerships</p>
+                            </div>
+                        </div>
+                        <div class="road_line"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div data-aos="fade-down" data-aos-duration="1100">
+                        <div class="row">
+                            <div class="col">
+                                <div class="q">Q1</div>
+                            </div>
+                            <div class="col">
+                                <h2>2022</h2>
+                            </div>
+                        </div>
+
+                        <div class="map">
+                            <p><img src="../public/img/s.png" /> Launch NFT</p>
+                            <p><img src="../public/img/s.png" /> Support NFT BEP1155</p>
+                            <p><img src="../public/img/s.png" /> Listing on CEX</p>
+                            <p><img src="../public/img/s.png" /> Start developing MetaDEX</p>
+                            <p><img src="../public/img/s.png" /> AirDrop event</p>
+                            <p><img src="../public/img/s.png" /> Pools update</p>
+                        </div>
+                        <div class="road_line"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <div class="dropp">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="q">Q2</div>
+                                </div>
+                                <div class="col">
+                                    <h2>2022</h2>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <p><img src="../public/img/s.png" /> Launch MetaDex</p>
+                                <p><img src="../public/img/s.png" /> Developing MetaWallet</p>
+                                <p><img src="../public/img/s.png" /> Launch new major CEX</p>
+                                <p><img src="../public/img/s.png" /> Launch MetaWallet</p>
+                                <p><img src="../public/img/s.png" /> Ecosystem refinement</p>
+                            </div>
+                        </div>
+                        <div class="road_line"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div data-aos="zoom-in" data-aos-duration="700">
+            <div class="tokenomics">
+                <div class="title">
+                    <div class="title-line"></div>
+                    <h3>TOKENOMICS</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <img src="../public/img/pools_img/metapad/tokenomic_grafic.png" class="img-fluid" />
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-9">
+                        <div class="graf">
+                            <div class="row">
+                                <div class="col-12 col-sm-5">
+                                    <div class="title">
+                                        <h4>Max supply</h4>
+                                        <div class="title-line"></div>
+                                        <h3>100,000,000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <p><img src="../public/img/pools_img/metapad/e1.png" class="img-fluid" /> Company
+                                        reserve - 40m</p>
+                                    <p><img src="../public/img/pools_img/metapad/e2.png" class="img-fluid" /> Token sell
+                                        - 21m</p>
+                                    <p><img src="../public/img/pools_img/metapad/e3.png" class="img-fluid" /> Liquidity-
+                                        15m</p>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                    <p><img src="../public/img/pools_img/metapad/e4.png" class="img-fluid" /> Marketing
+                                        - 9.5m</p>
+                                    <p><img src="../public/img/pools_img/metapad/e5.png" class="img-fluid" /> Team - 10m
+                                    </p>
+                                    <p><img src="../public/img/pools_img/metapad/e6.png" class="img-fluid" /> Advisor -
+                                        4.5m</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div data-aos="zoom-in" data-aos-duration="700">
+            <div class="title" style="text-align:center;">
+                <h3>OUR PARTNERS</h3>
+            </div>
+
+            <div class="part-line"></div>
+
+            <div class="logos">
+                <img src="../public/img/part/1.png" class="img-fluid" />
+                <img src="../public/img/part/2.png" class="img-fluid" />
+                <img src="../public/img/part/3.png" class="img-fluid" />
+                <img src="../public/img/part/4.png" class="img-fluid" />
+                <img src="../public/img/part/5.png" class="img-fluid" />
+                <img src="../public/img/part/6.png" class="img-fluid" />
+                <img src="../public/img/part/7.png" class="img-fluid" />
+                <img src="../public/img/part/8.png" class="img-fluid" />
+                <img src="../public/img/part/9.png" class="img-fluid" />
+                <img src="../public/img/part/14.png" class="img-fluid" />
+                <img src="../public/img/part/15.png" class="img-fluid" />
+                <img src="../public/img/part/10.png" class="img-fluid" />
+                <img src="../public/img/part/11.png" class="img-fluid" />
+                <img src="../public/img/part/12.png" class="img-fluid" />
+                <img src="../public/img/part/13.png" class="img-fluid" />
+                <img src="../public/img/part/16.png" class="img-fluid" />
+                <img src="../public/img/part/17.png" class="img-fluid" />
+                <img src="../public/img/part/18.png" class="img-fluid" />
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clr" style="height:70px;"></div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div class="git">
+                        <a href="https://docs.metaversepad.app/" target="_blank"><img src="../public/img/git_img.png"
+                                class="img-fluid" /></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="social">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-lg-5">
+                                <h3>FIND US ON SOCIAL</h3>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-7">
+                                <div class="social-img">
+                                    <a href="https://t.me/MetaPad_Community" target="_blank"><img
+                                            src="../public/img/telegram.png" /></a>
+                                    <a href="https://twitter.com/meta_ecosystem" target="_blank"><img
+                                            src="../public/img/twitter.png" /></a>
+                                    <a href="https://medium.com/@metaverse.ecosystem" target="_blank"><img
+                                            src="../public/img/medium.png" /></a>
+                                    <a href="mailto:metaverse.ecosystem@gmail.com"><img
+                                            src="../public/img/message.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div class="copy">© 2021 MetaPad. All rights reserved.</div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="contractt"><a
+                            href="https://bscscan.com/token/0xD88C6Ec2D3fBD90892c6749CF83De6ad10c30B4b"
+                            target="_blank"><button type="button" class="contract_button">MPD Contract</button></a>
+                    </div>
+                    <div class="mail"><a href="mailto:metaverse.ecosystem@gmail.com">metaverse.ecosystem@gmail.com</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script>AOS.init();</script>
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript"
+        src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <script>
+        function openAcc(element) {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            element.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = element.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="/public/js/notify.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1080 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #061123 !important;
+    margin: auto;
+    scroll-behavior: smooth;
+    letter-spacing: 0.04em;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.clr {
+    clear: both
+}
+
+.bg {
+    background: url(../img/bg.png) top no-repeat;
+    min-width: 320px;
+    max-width: 1980px;
+    min-height: 859px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+.logotype img {
+    max-width: 200px;
+}
+
+.loadingMessage {
+    color: white;
+}
+
+.tokenBalance {
+    color: #7552ffd0;
+    text-align: center;
+}
+
+.navbar {
+    padding-top: 50px !important;
+}
+
+
+.switchNetwork {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
+.switchNetwork .switchModal {
+    padding: 50px;
+    width: 350px;
+    height: 200px;
+    background: white;
+    border-radius: 12px;
+    box-sizing: content-box;
+}
+.toplinks {
+    padding-top: 10px;
+    margin-left: 70px;
+}
+
+    .toplinks img {
+        margin-right: 15px;
+        margin-left: 30px;
+    }
+
+    .toplinks a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        .toplinks a:hover {
+            color: #6d7c9b;
+        }
+
+.connect_button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3814e8+0,fc0ef8+100 */
+    background: #3814e8; /* Old browsers */
+    background: -moz-linear-gradient(left, #3814e8 0%, #fc0ef8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3814e8 0%,#fc0ef8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3814e8 0%,#fc0ef8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3814e8', endColorstr='#fc0ef8',GradientType=1 ); /* IE6-9 */
+    border-radius: 6px;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+    .connect_button:hover {
+        background: #fc0ef8;
+    }
+
+.block1_bg {
+    background: url(../img/block1_bg.png) top no-repeat;
+    min-width: 320px;
+    max-width: 1471px;
+    min-height: 533px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.intro {
+    color: #fff;
+    padding: 70px 10px 0px 10px;
+}
+
+.dott {
+    width: 25px;
+    height: 25px;
+    background: #3814e8;
+    border-radius: 50%;
+}
+
+.intro h1 {
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.intro h3 {
+    font-size: 3.5em;
+    font-weight: 200;
+    max-width: 550px;
+    margin-top: 0 px;
+}
+
+.apply {
+    background: #3814e8;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+    .apply:hover {
+        background: #502ff4
+    }
+
+    .apply img {
+        margin-right: 20px;
+    }
+
+.apps {
+    background: #1f2a41;
+    border-radius: 12px;
+    margin-top: 80px;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+    .apps h3 {
+        font-size: 1.8em;
+        max-width: 180px;
+        padding-top: 10px;
+    }
+
+    .apps p {
+        font-weight: 200;
+        padding: 20px 0px 0px 0px;
+        font-size: 1em;
+    }
+
+.about {
+    padding: 80px 20px;
+    color: #fff;
+}
+
+    .about p {
+        font-weight: 200;
+        font-size: 1.2em;
+        max-width: 650px;
+        padding: 20px 20px;
+    }
+
+.tokenomics {
+    padding: 20px 0px 80px 0px;
+    color: #fff;
+}
+
+.tokenomics p {
+        font-weight: 200;
+        font-size: 1.2em;
+        max-width: 650px;
+        padding: 20px 20px;
+    }
+
+.about-ido {
+    padding: 80px 0px 80px 0px;
+    color: #fff;
+}
+
+    .about-ido p {
+        font-weight: 200;
+        font-size: 1.2em;
+        max-width: 650px;
+        padding: 20px 20px;
+    }
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.st-form {
+    background: #1b2231;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+
+.st-title {
+    border-bottom: 1px solid#303b54;
+    font-size: 0.9em;
+    padding: 10px 0px;
+}
+
+.st-amount {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+
+.tierbg {
+    background: #050b19;
+    min-width: 320px;
+    max-width: 1980px;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding:30px 0px 60px 0px;
+}
+
+.planline {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3814e8+0,fc0ef8+100 */
+    background: #3814e8; /* Old browsers */
+    background: -moz-linear-gradient(left, #3814e8 0%, #fc0ef8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3814e8 0%,#fc0ef8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3814e8 0%,#fc0ef8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3814e8', endColorstr='#fc0ef8',GradientType=1 ); /* IE6-9 */
+    border-radius: 6px;
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.silver {
+    background: #1f2a41;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 40px 0px 0px 0px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid#e4e4e4;
+}
+
+
+.silver h2 {
+    font-size: 2.4em;
+    font-weight: 700 !important;
+    margin-top: 0px;
+}
+
+.silver h3{
+    font-size:2.3em;
+    font-weight:700 !important;
+    margin-top:0px;
+}
+
+.silver p{
+    font-size:1.1em;
+    font-weight:200;
+    margin-bottom:0px;
+    padding-top:10px;
+}
+
+.gold {
+    background: #1f2a41;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 40px 0px 0px 0px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid#ffe139;
+}
+
+
+    .gold h2 {
+        font-size: 2.4em;
+        font-weight: 700 !important;
+        margin-top: 0px;
+        background: #ffe292;
+        background: -webkit-linear-gradient(to right, #ffe292 0%, #f89b05 100%);
+        background: -moz-linear-gradient(to right, #ffe292 0%, #f89b05 100%);
+        background: linear-gradient(to right, #ffe292 0%, #f89b05 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gold h3 {
+        font-size: 2.3em;
+        font-weight: 700 !important;
+        margin-top: 0px;
+    }
+
+    .gold p {
+        font-size: 1.1em;
+        font-weight: 200;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+
+.platinum {
+    background: #1f2a41;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 40px 0px 0px 0px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid#65e0f2;
+}
+
+
+    .platinum h2 {
+        font-size: 2.4em;
+        font-weight: 700 !important;
+        margin-top: 0px;
+        background: #ffe292;
+        background: -webkit-linear-gradient(to right, #ffe292 0%, #65e0f2 100%);
+        background: -moz-linear-gradient(to right, #ffe292 0%, #65e0f2 100%);
+        background: linear-gradient(to right, #ffe292 0%, #65e0f2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .platinum h3 {
+        font-size: 2.3em;
+        font-weight: 700 !important;
+        margin-top: 0px;
+    }
+
+    .platinum p {
+        font-size: 1.1em;
+        font-weight: 200;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+
+.pplanl {
+    background: #071021;
+    border-radius: 12px;
+    padding: 10px 0px;
+    margin:30px 10px 0px 10px;
+
+}
+
+.garant {
+    background: #111d30;
+    padding:20px 0px;
+    border-radius:12px;
+}
+
+.title {
+    padding: 40px 20px 40px 20px;
+    color: #fff;
+}
+
+    .title h3 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+.title-line {
+    height: 40px;
+    width: 10px;
+    background: #351be3;
+    border-radius: 12px;
+    margin-right: 20px;
+    float: left;
+}
+
+.pools {
+    background: #0f2139;
+    width: 100%;
+    height: 100%;
+}
+
+.pools_bg {
+    background: url(../img/pools_bg.jpg) top no-repeat;
+    min-width: 320px;
+    max-width: 1980px;
+    min-height: 577px;
+    margin: 0 auto;
+}
+
+.roadmap {
+    padding: 40px 0px;
+    color: #fff;
+}
+
+.q {
+    background: #351be3;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.roadmap h2 {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.map {
+    background: #0f2139;
+    border-radius: 12px;
+    padding: 20px 20px;
+    margin-top: 10px;
+    min-height: 320px;
+}
+
+.dropp {
+    margin-top: 60px;
+}
+
+.road_line {
+    background: url(../img/road_line.png) top no-repeat;
+    width: 116px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mid_pool {
+    background: #fff;
+    border-radius: 12px;
+    color: #1c263b;
+}
+
+.pool_info {
+    padding: 20px 20px 20px 10px;
+}
+
+    .pool_info h3 {
+        font-weight: 700;
+        font-size: 2.2em;
+        margin-bottom: 0px;
+    }
+
+    .pool_info p {
+        font-weight: 200;
+        font-size: 1.1em;
+    }
+
+.time_bg {
+    background: #e2e6e9;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+    .time_bg img {
+        max-width: 20px;
+        margin-top: -2px;
+        margin-right: 10px;
+    }
+
+
+.empty_pool {
+    background: #061123;
+    border-radius: 30px;
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+    .empty_pool img {
+        margin-top: -5px;
+        margin-right: 10px;
+    }
+
+    .empty_pool h3 {
+        color: #9eabc7;
+        margin-bottom: 0px;
+    }
+
+    .empty_pool p {
+        margin-top: 0px;
+        font-weight: 200;
+        margin-left: 4%;
+    }
+
+.pool_footer {
+    padding-top: 20px;
+}
+
+    .pool_footer img {
+        float: left;
+        max-width: 30px;
+        margin-right: 10px;
+    }
+
+    .pool_footer h3 {
+        font-size: 1.2em;
+    }
+
+.pool_btn {
+    background: #3814e8;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: -27px;
+    font-weight: 600;
+    float: right;
+}
+
+.graf {
+    margin-top: 40px;
+}
+
+    .graf p {
+        margin: 12px 0px;
+        padding: 0px;
+    }
+
+.proj_icon {
+    margin-top: 100px;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+    .proj_icon h3 {
+        font-weight: 700;
+        font-size: 2.8em;
+        margin: -5px 0px 0px 0px !important;
+        padding: 0px 0px !important;
+    }
+
+.check_button {
+    background: #3814e8;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: -17px;
+    font-weight: 600;
+}
+
+.preline {
+    background: #272d3b;
+    height: 1px;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.allocation {
+    margin-top: 20px;
+}
+
+    .allocation p {
+        font-size: 1.2em;
+        margin-bottom: 0px;
+    }
+
+    .allocation h2 {
+        font-size: 2.7em;
+        margin: 0px 0px;
+        font-weight: 700;
+    }
+
+    .allocation h3 {
+        font-size: 1.1em;
+        margin-top: 10px !important;
+    }
+
+.progress {
+    margin-top: 30px;
+    height: 40px !important;
+}
+
+.form-bg {
+    background: #171f31;
+    border-radius: 12px;
+    color: #fff;
+    margin: 80px 20px 0px 20px;
+    padding: 80px 20px;
+}
+
+.whitlistcheck {
+    background: #141b2b;
+    border-radius: 12px;
+    padding: 10px 0px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #6d7c9b;
+}
+
+.timebg {
+    background: #e1e3e9;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    color: #171f31;
+    margin-top: 20px;
+}
+
+    .timebg img {
+        margin-right: 10px;
+        max-width: 20px;
+        margin-top: -3px;
+    }
+
+.formido {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+    .formido p {
+        font-weight: 200;
+        padding: 9px 0px;
+        margin: 0px !important;
+        font-size: 1.2em;
+    }
+
+    .formido b {
+        background: #101727;
+        padding: 10px 10px;
+        border-radius: 12px;
+        margin-left: 20px;
+        font-weight: 600;
+    }
+
+.form-control {
+    border-radius: 12px !important;
+    padding: 12px 10px !important;
+    margin-top: 40px;
+}
+
+.ido_button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3814e8+0,fc0ef8+100 */
+    background: #3814e8; /* Old browsers */
+    background: -moz-linear-gradient(left, #3814e8 0%, #fc0ef8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3814e8 0%,#fc0ef8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3814e8 0%,#fc0ef8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3814e8', endColorstr='#fc0ef8',GradientType=1 ); /* IE6-9 */
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    padding: 12px 10px !important;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+    .ido_button:hover {
+        background: #fc0ef8;
+    }
+
+.aloc {
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .aloc p {
+        font-weight: 200;
+        margin: 0px 0px !important;
+    }
+
+    .aloc h3 {
+        margin-top: 7px;
+    }
+
+
+
+.list-bg {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+
+.left-info img {
+    float: left;
+}
+
+.left-info h4 {
+    color: #5b6479;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+}
+
+.left-info p {
+    color: #727272;
+}
+
+.right-info {
+    margin-top: 20px;
+}
+
+    .right-info img {
+        float: right;
+        max-width: 30px;
+        margin-top: 8px;
+    }
+
+    .right-info h5 {
+        float: right;
+        margin-right: 10px;
+        font-size: 1em;
+        margin-top: 13px;
+    }
+
+.pr-logo {
+    background: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.seti h5 {
+    margin-top: 23px;
+    font-size: 1.1em;
+}
+
+.seti img {
+    max-width: 30px;
+    margin-top: -3px;
+    float: left;
+    margin-right: 10px;
+}
+
+.logos {
+    text-align:center;
+}
+
+.logos img {
+    max-height: 45px;
+    margin: 20px 20px;
+}
+
+
+.part-line {
+    max-width: 300px;
+    background: #311dda;
+    height:2px;
+    border-radius:12px;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+
+.footer {
+    background: #030c1d;
+    max-width: 1980px;
+    min-height: 270px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.git {
+    margin-top: -50px;
+}
+
+.social-img {
+    text-align: right;
+    margin-top: 40px;
+}
+
+    .social-img img {
+        margin: 20px 0px 20px 30px;
+    }
+
+.social h3 {
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 2.3em;
+    margin-top: 37px;
+}
+
+.copy {
+    color: #9ba8c5;
+    margin: 40px 0px;
+}
+
+.mail {
+    float: right;
+    margin: 40px 40px 0px 0px;
+}
+
+    .mail a {
+        color: #fff;
+        font-weight: 700;
+    }
+
+.contractt {
+    float: right;
+    margin-top: 30px;
+}
+
+.contract_button {
+    background: #3814e8;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 760px) {
+    .navbar {
+        padding-top: 30px !important;
+    }
+
+    .toplinks {
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+
+        .toplinks img {
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+
+    .connect_button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .intro h1 {
+        font-size: 4em;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .intro {
+        color: #fff;
+        padding: 50px 10px 0px 10px;
+    }
+
+    .apps {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+        .apps h3 {
+            font-size: 1.8em;
+            max-width: 100%;
+            padding-top: 10px;
+        }
+
+    .about p {
+        padding: 20px 0px;
+    }
+
+    .tierbg {
+        background: #050b19;
+        min-width: 320px;
+        max-width: 1980px;
+        min-height: 200px;
+        margin: 0 auto;
+        margin-top: 0px;
+        padding: 30px 20px;
+    }
+
+    .about-ido p {
+        padding: 20px 20px;
+    }
+
+    .title {
+        padding: 50px 0px 20px 0px;
+    }
+
+    .pools {
+        padding-bottom: 30px;
+    }
+
+    .pools_place {
+        padding: 0px 20px;
+    }
+
+    .pool_info {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .poolava {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .roadmap {
+        padding: 20px 20px;
+    }
+
+    .dropp {
+        margin-top: 0px;
+    }
+
+
+    .social-img {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .social-img img {
+            margin: 10px 10px 10px 10px;
+        }
+
+    .social h3 {
+        margin-left: 0px;
+        font-weight: 700;
+        font-size: 2.3em;
+        margin-top: 37px;
+        text-align: center;
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    .mail {
+        float: none;
+        text-align: center;
+        margin: 10px 0px 30px 0px;
+    }
+
+    .contractt {
+        float: none;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .mid_pool {
+        margin-top: 30px;
+    }
+
+    .empty_pool {
+        margin-top: 30px;
+    }
+
+    .tokenomics {
+        text-align:center;
+        padding:20px 30px;
+    }
+
+
+    .graf {
+        text-align: left;
+        margin-top: 40px;
+    }
+
+        .graf p {
+            margin: 12px 0px;
+            padding: 0px;
+        }
+
+
+    .proj_icon {
+        margin-top: 40px;
+    }
+
+    .form-bg {
+        background: #171f31;
+        border-radius: 12px;
+        color: #fff;
+        margin: 50px 0px 0px 0px;
+        padding: 20px 20px;
+    }
+
+    .right-info {
+        margin-top: 0px;
+    }
+
+        .right-info img {
+            float: left;
+            max-width: 30px;
+            margin-top: 8px;
+        }
+
+        .right-info h5 {
+            float: left;
+            margin-left: 10px;
+            font-size: 1em;
+            margin-top: 13px;
+        }
+
+    .pname h3 {
+        font-size: 2em;
+    }
+
+    .pr-logo {
+        padding: 10px 10px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1020px) {
+
+    .toplinks {
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+
+        .toplinks img {
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+
+    .connect_button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-img {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+        .social-img img {
+            margin: 10px 0px 10px 10px;
+        }
+
+    .social h3 {
+        margin-left: 0px;
+        font-weight: 700;
+        font-size: 2.3em;
+        margin-top: -40px;
+        text-align: center;
+    }
+
+    .mid_pool {
+        margin-top: 30px;
+    }
+
+    .empty_pool {
+        margin-top: 30px;
+    }
+}
